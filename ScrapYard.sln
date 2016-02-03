@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{5D5D2681-261F-CA69-E4C1-A62F54EC22A3}") = "ScrapYard", "Assembly-CSharp.csproj", "{D45FB4EA-04C3-A074-6CD9-344059DFA304}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D45FB4EA-04C3-A074-6CD9-344059DFA304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D45FB4EA-04C3-A074-6CD9-344059DFA304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D45FB4EA-04C3-A074-6CD9-344059DFA304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D45FB4EA-04C3-A074-6CD9-344059DFA304}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
