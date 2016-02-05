@@ -45,7 +45,18 @@ public class TestMove : MonoBehaviour {
 	bool canMove(Vector3 dir){
 		Vector3 target = dir + player.transform.position;
 		target = new Vector3(target.x, Mathf.Round(target.y), target.z);
-		return (!world.unreachable[(int) target.x + size/2, (int) target.y, (int) target.z + size/2]) ;
+		if(dir.x == -1.0f){
+			return (!world.unreachable[(int) target.x + size/2, (int) target.y, (int) target.z + size/2].UpperLeft) ;
+		}
+		else if(dir.z == 1.0f){
+			return (!world.unreachable[(int) target.x + size/2, (int) target.y, (int) target.z + size/2].UpperRight) ;
+		}
+		else if(dir.z == -1.0f){
+			return (!world.unreachable[(int) target.x + size/2, (int) target.y, (int) target.z + size/2].LowerLeft) ;
+		}
+		else{
+			return (!world.unreachable[(int) target.x + size/2, (int) target.y, (int) target.z + size/2].LowerRight) ;
+		}
 	}
 
 }
