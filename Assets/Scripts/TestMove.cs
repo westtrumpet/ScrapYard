@@ -20,7 +20,7 @@ public class TestMove : MonoBehaviour {
 	
 	void Update () {
 		if(Input.anyKeyDown) OnMove();
-		
+		if(Input.GetKeyDown(KeyCode.Space)) useItem();
 	}
 
 	void OnMove() {
@@ -57,6 +57,10 @@ public class TestMove : MonoBehaviour {
 		else{
 			return (!world.unreachable[(int) target.x + size/2, (int) target.y, (int) target.z + size/2].LowerRight) ;
 		}
+	}
+
+	void useItem() {
+		Debug.Log("Use Item");
 	}
 
 }
